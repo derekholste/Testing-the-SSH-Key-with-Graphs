@@ -1,0 +1,20 @@
+---
+title: "First MArkdwon in Git"
+author: "Derek Holste"
+date: "3/31/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r Plot 1}
+library(pacman)
+p_load(ggplot2, tidyverse)
+m <- mtcars
+plot_1 <- ggplot(m, aes(x = cyl, y = mpg)) + geom_point(aes(size = hp, color = qsec),alpha = .2)
+plot_1
+```
+
