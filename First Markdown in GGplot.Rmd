@@ -2,7 +2,9 @@
 title: "First MArkdwon in Git"
 author: "Derek Holste"
 date: "3/31/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
